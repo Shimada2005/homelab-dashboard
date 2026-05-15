@@ -7,23 +7,22 @@ A simple homelab monitoring dashboard built with:
 
 ---
 
-## Frontend Startup
+## 🚀 Startup
 
-### Move to frontend
+### ▶ Recommended (One command)
+
+```powershell
+.\start-dev.bat
+```
+This starts both frontend and backend automatically.
+
+### ▶ Manual startup (for debugging)
+
+#### Frontend
 
 ```powershell
 cd frontend
-```
-
-### Install dependencies
-
-```powershell
 npm install
-```
-
-### Start development server
-
-```powershell
 npm run dev
 ```
 
@@ -33,39 +32,21 @@ Frontend URL:
 http://localhost:5173
 ```
 
----
-
-## Backend Startup
-
-### Move to backend
+#### Backend
 
 ```powershell
 cd backend
-```
-
-### Activate virtual environment
-
-```powershell
 .\venv\Scripts\activate
-```
-
-### Start FastAPI server
-
-```powershell
 uvicorn main:app --reload
 ```
 
 Backend URL:
-
 ```txt
 http://127.0.0.1:8000
 ```
 
-API Endpoint:
-
-```txt
-http://127.0.0.1:8000/status
-```
+Endpoints:
+- GET /status
 
 ---
 
@@ -78,7 +59,7 @@ http://127.0.0.1:8000/status
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 ### Frontend
 
