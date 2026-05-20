@@ -1,0 +1,17 @@
+.cpu-page {
+    padding: 40px;
+    color: white;
+}
+
+.cpu-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cpu-card {
+    background: #2c2c2c;
+    padding: 20px;
+    border-radius: 12px;
+    width: 220px;
+}
