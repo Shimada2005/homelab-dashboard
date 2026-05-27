@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import "./Dashboard.css";
-import Card from "./Card";
+import "../css/Dashboard.css";
+import Card from "../components/Card";
 import { useNavigate } from "react-router-dom";
 
 function Dashboard() {

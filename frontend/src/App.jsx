@@ -4,8 +4,8 @@ import {
   Route,
 } from "react-router-dom";
 
-import Dashboard from "./Dashboard";
-import CpuPage from "./CpuPage";
+import Dashboard from "./pages/Dashboard";
+import CpuPage from "./pages/CpuPage";
 
 function App() {
   return (

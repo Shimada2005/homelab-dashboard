@@ -1,4 +1,4 @@
-import "./CpuPage.css";
+import "../css/CpuPage.css";
 
 function CpuPage() {
 return (
