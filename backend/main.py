@@ -74,6 +74,22 @@ def get_status():
 
         # CPU使用率
         "cpu": psutil.cpu_percent(),
+        
+        # 物理CPUコア数
+        # logical=False にすると実コア数を取得
+        "cpu_cores": psutil.cpu_count(logical=False),
+
+        # 論理CPU数(スレッド数)
+        # logical=True でHT/SMT込みの論理数取得
+        "cpu_threads": psutil.cpu_count(logical=True),
+
+        # 現在のCPUクロック周波数(MHz)
+        # current で現在動作中の周波数取得
+        "cpu_freq": psutil.cpu_freq().current,
+
+        # CPU名取得
+        # 例: Intel(R) Core(TM) i7...
+        "cpu_name": platform.processor(),
 
         # メモリ使用率
         "memory": psutil.virtual_memory().percent,
